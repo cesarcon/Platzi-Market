@@ -1,5 +1,12 @@
 package com.platzi.market.domain;
 
+import com.platzi.market.domain.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
 public class Product {
 	
 	private int productId;
@@ -52,7 +59,7 @@ public class Product {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-	
-	
+
+
 
 }
